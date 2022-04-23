@@ -1,4 +1,6 @@
-package sda99.carrental;
+package sda99.carrental.Database;
+
+import sda99.carrental.Database.Vehicle;
 
 import java.util.ArrayList;
 import java.util.List;

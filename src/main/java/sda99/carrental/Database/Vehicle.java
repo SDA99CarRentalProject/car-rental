@@ -1,4 +1,4 @@
-package sda99.carrental;
+package sda99.carrental.Database;
 
 public class Vehicle {
 
