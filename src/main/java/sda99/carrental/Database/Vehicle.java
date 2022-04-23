@@ -2,10 +2,10 @@ package sda99.carrental.Database;
 
 public class Vehicle {
 
-    private String brand;       /// marka samochodu np. Audi
+    private String brand;       //A/ marka samochodu np. Audi
     private String model;       /// model samochodu np. A5
     private int year;           /// rok produkcji
-    private float engineCap;   /// pojemnosc silnika np. 2.0
+    private double engineCap;   /// pojemnosc silnika np. 2.0
     private String regNo;      /// numer rejestracyjny
 
     public Vehicle (String newBrand, String newModel, int newYear,
@@ -42,7 +42,7 @@ public class Vehicle {
         this.year = year;
     }
 
-    public float getEngineCap() {
+    public double getEngineCap() {
         return engineCap;
     }
 
