@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layouts/layout}">
+<head>
+    <title>Demo page</title>
+</head>
+<body>
+<div layout:fragment="content" class="container">
+
+    <div class="jumbotron">
+        <h1>Cars</h1>
+        <table>
+            <th>
+                <td>Brand</td>
+                <td>Model</td>
+                <td>Year</td>
+                <td>Engine</td>
+                <td>Plate</td>
+            </th>
+            <tr th:each="car, i : ${cars}"
+                    th:style="${i.odd}? 'font-weight: bold;'"
+                    th:alt-title="${i.even}? 'even' : 'odd'">
+                <td th:text="${car.brand.label}" />
+                <td th:text="${car.model}" />
+                <td th:text="${car.year}" />
+                <td th:text="${car.engineCap}" />
+                <td th:text="${car.regNo}" />
+            </tr>
+
+        </table>
+    </div>
+</div>
+</body>
+</html>
